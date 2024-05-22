@@ -64,4 +64,11 @@ public class Pokemon {
     public void setMaxHp(int maxHp) {
         this.maxHp = maxHp;
     }
+
+    public void receiveDamage(int damage) {
+        this.hp -= damage;
+        if (this.hp <= 0) {
+            this.hp = 0;
+        }
+    }
 }
