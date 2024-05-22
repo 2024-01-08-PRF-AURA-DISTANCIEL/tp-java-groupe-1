@@ -45,8 +45,8 @@ public class Pokemon {
         return xp;
     }
 
-    public void setXp(int xp) {
-        this.xp = xp;
+    public void gainXp(int xp) {
+        this.xp += xp;
     }
 
     public int getHp() {
