@@ -7,5 +7,5 @@ public abstract class Specie extends Pokemon {
 		this.lifeInit = lifeInit;
 		this.atkInit = atkInit;
 		}
-
+	public abstract void trip(Where Place);
 }
