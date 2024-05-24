@@ -1,18 +1,16 @@
 package model;
 
-public abstract class Roucool extends Specie {
-	public Roucool(String speciesName, String type, double lifeInit, double atkInit) {
-		this.speciesName = roucool;
-		this.type = flying;
-		this.lifeInit = 12;
-		this.atkInit = 8;
-		}
-	
-	public void trip(Where Place) {
-		System.out.println("Le pokemon : " + this.nom + " se promene au : " + Place);
-		if (Place == "Desert") {
-			System.out.println("Le pokemon : " + this.nom + "apprecie la promenade !");
-			//getExp ici
+public class Roucool extends Specie {
+	public Roucool(int id, String name, String speciesName, String type, double lifeInit, double atkInit, int maxHp, Attack attack) {
+		super(id, name, speciesName, type, (int) lifeInit, 0, maxHp, attack);
+	}
+
+	@Override
+	public void trip(String place) {
+		System.out.println("Le Pokémon : " + getName() + " se promène au : " + place);
+		if (place.equals("Desert")) {
+			System.out.println("Le Pokémon : " + getName() + " apprécie la promenade !");
+			gainXp(2);
 		}
 	}
 }

@@ -1,6 +1,12 @@
 package model;
 
-public class Pokemon {
+public abstract class Pokemon {
+    protected int id;
+    protected String name;
+    protected int level;
+    protected int xp;
+    protected int hp;
+    protected int maxHp;
 
     public Pokemon(int id, String name, int level, int xp, int hp, int maxHp) {
         this.id = id;
@@ -9,6 +15,7 @@ public class Pokemon {
         this.xp = xp;
         this.hp = hp;
         this.maxHp = maxHp;
+
     }
 
     public int getId() {
