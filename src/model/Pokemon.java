@@ -1,12 +1,6 @@
 package model;
 
 public class Pokemon {
-    private int id;
-    private String name;
-    private int level;
-    private int xp;
-    private int hp;
-    private int maxHp;
 
     public Pokemon(int id, String name, int level, int xp, int hp, int maxHp) {
         this.id = id;
